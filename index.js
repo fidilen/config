@@ -1,6 +1,6 @@
 'use strict';
 
-const config = () => {
+const getConfig = () => {
     const configuration = require(process.cwd() + `/config/env.json`);
 
     if (configuration.ENV) {
@@ -9,5 +9,7 @@ const config = () => {
 
     return configuration;
 };
+
+const config = getConfig();
 
 module.exports = config;
