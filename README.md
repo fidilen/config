@@ -10,6 +10,9 @@ The main goal of this is to save projects from using `process.env` while keeping
   - Create a new JSON file in the same directory with suffix after the keyword (eg. `env-dev.json`)
   - Otherwise, default config is the `env.json`
 
+> Note:
+> You should add `config` in your `.gitignore` if you don't want to have these included in your commits.
+
 ### Examples
 - `env.json`
 ```json
