@@ -21,10 +21,7 @@ The main goal of this is to save projects from using `process.env` while keeping
 - `env-dev.json`
 ```json
 {
-    "TOKEN": "123",
-    .
-    .
-    .
+    "VARIABLE_NAME": "123"
 }
 ```
 
