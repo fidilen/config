@@ -1,6 +1,6 @@
 {
-  "name": "@fidilen/config",
-  "version": "1.0.3",
+  "name": "@fidilen/env",
+  "version": "2.0.0",
   "description": "Easy-to-use configuration system for environment variables. The main goal of this is to save projects from using `process.env` while keeping the convenience of referencing the variables across a project.",
   "main": "index.js",
   "scripts": {
