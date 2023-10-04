@@ -4,14 +4,14 @@ The main goal of this is to save projects from using `process.env` while keeping
 
 
 ## Setup
-- New folder `config` in the root directory.
-- New `env.json` under the `config` folder.
+- New folder `env` in the root directory.
+- New `env.json` under the `env` folder.
 - Set `ENV` as either `dev`, `prod`, or any other keyword.
   - Create a new JSON file in the same directory with suffix after the keyword (eg. `env-dev.json`)
   - Otherwise, default config is the `env.json`
 
 > Note:
-> You should add `config` in your `.gitignore` if you don't want to have these included in your commits.
+> You should add `env` in your `.gitignore` if you don't want to have these included in your commits.
 
 ### Examples
 - `env.json`
@@ -31,7 +31,7 @@ The main goal of this is to save projects from using `process.env` while keeping
 
 ## Usage
 ```js
-const config = require('@lena/config');
+const config = require('@fidilen/config');
 
 console.log(config.VARIABLE_NAME);
 ```
