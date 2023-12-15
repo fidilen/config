@@ -1,15 +1,17 @@
-'use strict';
+'use strict'
 
 const getConfig = () => {
-    let configuration = require(process.cwd() + `/env/env.json`);
+    let environment = process.env?.ENV
 
-    if (configuration.ENV) {
-        configuration = require(process.cwd() + `/env/env-${configuration.ENV}.json`);
+    if (!environment) {
+        let configuration = require(process.cwd() + `/env/env`)
+
+        environment = configuration.ENV
     }
 
-    return configuration;
-};
+    return require(process.cwd() + `/env/env-${environment}`)
+}
 
-const config = getConfig();
+const config = getConfig()
 
-module.exports = config;
+module.exports = config

@@ -1,7 +1,7 @@
 {
   "name": "@fidilen/env",
-  "version": "2.0.0",
-  "description": "Easy-to-use configuration system for environment variables. The main goal of this is to save projects from using `process.env` while keeping the convenience of referencing the variables across a project.",
+  "version": "2.2.0",
+  "description": "Easy-to-use configuration system for environment variables. Acts as subtitute for .env files if you don't want to update .env from time to time, or if you need to expose variables, but not .env.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
